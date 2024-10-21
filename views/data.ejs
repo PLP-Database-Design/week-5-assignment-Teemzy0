@@ -1,0 +1,54 @@
+<h1>Patient Data</h1>
+<table>
+    <thead>
+        <tr>
+            <th> Patient ID </th>
+            <th> First Name </th>     
+            <th> Last Name </th>
+            <th> Date of Birth </th>
+            <th> Gender </th>
+            <th> Language </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% results.forEach(row =>{%>
+            <tr>
+                <td><%= row.patient_id %></td>
+                <td><%= row.first_name %></td>
+                <td><%= row.last_name %></td>
+                <td><%= row.date_of_birth %></td>
+                <td><%= row.gender %></td>
+                <td><%= row.language %></td>
+            </tr>
+        <%
+        });%>
+    </tbody>
+</table>
+
+
+
+<br>
+<h1>Providers Data</h1>
+<table>
+    <thead>
+        <tr>
+            <th> Provider ID </th>
+            <th> First Name </th>     
+            <th> Last Name </th>
+            <th> Provider_specialty </th>
+            <th> Email Address </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% results.forEach(row =>{%>
+            <tr>
+                <td><%= row.provider_id %></td>
+                <td><%= row.first_name %></td>
+                <td><%= row.last_name %></td>
+                <td><%= row.provider_specialty %></td>
+                <td><%= row.email_address%></td>
+            </tr>
+        <%
+        });%>
+    </tbody>
+</table>
